@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 
 import Form from "react-bootstrap/Form";
@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
+
 import Container from "react-bootstrap/Container";
 
 import { Link, useHistory } from "react-router-dom";
@@ -14,8 +15,15 @@ import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import { SetCurrentUserContext } from "../../contexts/CurrentUserContext";
+import { useRedirect } from "../../hooks/UserRedirect";
+
+
 
 function SignInForm() {
+  const setCurrentUser = useContext(SetCurrentUserContext);
+  useRedirect('loggedIn')
+
   const [signInData, setSignInData] = useState({
     username: "",
     password: "",
@@ -27,9 +35,11 @@ function SignInForm() {
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      await axios.post("/dj-rest-auth/login/", signInData);
-      history.push("/");
+      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+      setCurrentUser(data.user);
+      history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -100,15 +110,15 @@ function SignInForm() {
           </Link>
         </Container>
       </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://res.cloudinary.com/dlowfwhov/image/upload/v1675333876/IMG_9440_2_hawhyj.jpg"}
-        />
-      </Col>
+        <Col
+          md={6}
+          className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
+        >
+          <Image
+            className={`${appStyles.FillerImage}`}
+            src={"https://res.cloudinary.com/dlowfwhov/image/upload/v1675333876/IMG_9440_2_hawhyj.jpg"}
+          />
+        </Col>
     </Row>
   );
 }
