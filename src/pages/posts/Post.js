@@ -32,7 +32,6 @@ const Post = (props) => {
     history.push(`/posts/${id}/edit`);
   };
 
-  // Function that allows usere to delete posts
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/posts/${id}/`);
@@ -42,7 +41,6 @@ const Post = (props) => {
     }
   };
 
-  // function that allows user to like post and update post like count
   const handleLike = async () => {
     try {
       const { data } = await axiosRes.post("/likes/", { post: id });
@@ -59,7 +57,6 @@ const Post = (props) => {
     }
   };
 
-  // Function that allows user to unlike post and update post like count
   const handleUnlike = async () => {
     try {
       await axiosRes.delete(`/likes/${like_id}/`);
@@ -78,7 +75,7 @@ const Post = (props) => {
 
   return (
     <Card className={styles.Post}>
-      <Card.Body>
+      <Card.Body >
         <Media className="align-items-center justify-content-between">
           <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profile_image} height={55} />
@@ -98,7 +95,7 @@ const Post = (props) => {
       <Link to={`/posts/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
-      <Card.Body>
+      <Card.Body c>
         {title && <Card.Title className="text-center">{title}</Card.Title>}
         {content && <Card.Text>{content}</Card.Text>}
         <div className={styles.PostBar}>
