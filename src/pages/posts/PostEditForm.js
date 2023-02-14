@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 
 import Form from "react-bootstrap/Form";
@@ -30,7 +29,6 @@ function PostEditForm() {
   const history = useHistory();
   const { id } = useParams();
 
-  // Function that fetching post img and content and allows only logged user to edit
   useEffect(() => {
     const handleMount = async () => {
       try {

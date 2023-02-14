@@ -49,8 +49,9 @@ function CommentCreateForm(props) {
             <Avatar src={profileImage} />
           </Link>
           <Form.Control
+            maxLength="200"
             className={styles.Form}
-            placeholder="my comment..."
+            placeholder="my comment, max 200 characters..."
             as="textarea"
             value={content}
             onChange={handleChange}

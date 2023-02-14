@@ -18,8 +18,12 @@ import btnStyles from "../../styles/Button.module.css";
 
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import { useRedirect } from "../../hooks/UserRedirect";
+
+
 
 function PostCreateForm() {
+  useRedirect('loggedOut');
   const [errors, setErrors] = useState({});
 
   const [postData, setPostData] = useState({
@@ -87,7 +91,9 @@ function PostCreateForm() {
 
       <Form.Group>
         <Form.Label>Content</Form.Label>
-        <Form.Control
+        <Form.Control 
+          placeholder="Max 450 Characters "
+          maxLength="450"
           as="textarea"
           rows={6}
           name="content"
@@ -116,7 +122,7 @@ function PostCreateForm() {
   return (
     <Form onSubmit={handleSubmit}>
       <Row>
-        <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
+        <Col className="py-2 p-0 p-md-2" md={7} lg={10}>
           <Container
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
           >
@@ -149,7 +155,7 @@ function PostCreateForm() {
 
               <Form.File
                 id="image-upload"
-                accept="image/*"
+                accept="file/*"
                 onChange={handleChangeImage}
                 ref={imageInput}
               />
@@ -163,7 +169,7 @@ function PostCreateForm() {
             <div className="d-md-none">{textFields}</div>
           </Container>
         </Col>
-        <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">
+        <Col md={7} lg={10} className="d-none d-md-block p-0 p-md-2">
           <Container className={appStyles.Content}>{textFields}</Container>
         </Col>
       </Row>
