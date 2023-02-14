@@ -30,7 +30,7 @@ const NavBar = () => {
   const addPostIcon = (
     <OverlayTrigger
       placement="bottom"
-      overlay={<Tooltip>Add post</Tooltip>}
+      overlay={<Tooltip>Create post</Tooltip>}
       >
         <NavLink
           className={styles.NavLink}
