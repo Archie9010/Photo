@@ -1,70 +1,229 @@
-# Getting Started with Create React App
+# Photo Star
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to [Photo Star ](https://social-star.herokuapp.com/) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way. Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
+Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
-## Available Scripts
+![mockup]()
 
-In the project directory, you can run:
+## Index 
+* [Technologies Used](#technologies-used)
+* [Fearures](#features)
+* [Contact](#contacts)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [CSS](https://en.wikipedia.org/wiki/CSS)
+ * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+ * [Django/allauth](https://en.wikipedia.org/wiki/Django_(web_framework))
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+ * [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)
+ * [Heroku](https://en.wikipedia.org/wiki/Heroku)
+ * [Chrome](https://en.wikipedia.org/wiki/Google_Chrome)
+ * [Stack Overflow](https://en.wikipedia.org/wiki/Stack_Overflow)
+ * [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
+ * [Pep8](https://pypi.org/project/pep8/)
+ * [W3school](https://en.wikipedia.org/wiki/W3Schools)
+ * [Git](https://en.wikipedia.org/wiki/Git) 
+ * [Github](https://en.wikipedia.org/wiki/GitHub)
+ * [Gitpod](https://www.gitpod.io/docs/introduction) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## Wireframe
+The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-### `npm test`
+### Landing Page
+![home]()
+### Landing Page Medium 
+![home]()
+### Landing Page Small
+![home]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Post Details Page
 
-### `npm run build`
+### User Post Details Large
+![profile]()
+### User Post Details Medium 
+![profile]()
+### User Post Details Small
+![profile]()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Login 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Login Large
+![login]()
+### Login Medium
+![login]()
+### Login Small
+![login]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+### Navigation Bar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Featured at the top of the page, The navigation shows the page name in the left corner: My Blog that links to the Home page. When hovered over, Categories, Add Post, Add Category and Logout menu changes color for easy navigation.
+* Featured on all three pages, the full responsive navigation bar includes links to, Home page, Register or Login. When logged in includes: Categories, Add post, Add Category and User First and last name displayed on the left site of the navbar with options to edit profile, edit settings, show profile page and logout. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Menu Logged In
+![Menu Logged In]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Menu Logged Out
+![Menu Logged Out]()
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Menu Current user
+![Menu Logged Out]()
 
-## Learn More
+### Register Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![register]()
 
-### Code Splitting
+### Login Page 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Login page form allows user to login into user account
 
-### Analyzing the Bundle Size
+![Login]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Change Password
 
-### Making a Progressive Web App
+* Change password form allows user to update ppassword.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Change Password]()
 
-### Advanced Configuration
+### Change User Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Change User Details allows user to updated details on his profile.
 
-### Deployment
+![Change User Details]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Add Post
 
-### `npm run build` fails to minify
+* Add post allows user to post articles. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Add Post]()
+
+
+## Testing
+
+### Functionality
+
+### Manual Testing
+   
+| Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
+|:------------------ |:---------------------------------|:-----------------------------------|:----------------|
+| Menu Test          |  Responsive Nav bar              | Navigate to the desired page.      | PASS            |
+| Edit/Delete post   |  Responsive Button               | Navigate to external websites      | PASS            |
+| Login button (form)|  Responsive Login button.        | Navigates to home page             | PASS            |
+| Register           |  Responsive Register button      | Navigates to home page             | PASS            |
+| Social media links |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
+| Login/Logout       |  Responsive Nav bar              | Allows to log in and out           | PASS            |
+| Add post           |  Responsive User page            | Navigate to add post section       | PASS            |
+| Add category       |  Responsive Nav bar              | Allows to add new category         | PASS            |
+| Add comment        |  Responsive User page            | Allows to add new comment          | PASS            |
+| Search by cat      |  Responsive User page            | Allows user to search by categories| PASS            |
+| Edit details       |  Responsive User page            | Navigates to edit details page     | PASS            |
+| Edit Settings      |  Responsive User page            | Navigates to edit settings page    | PASS            |
+| Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
+| Edit/Delete post   |  Responsive User page            | Allows to delete/edit post         | PASS            |
+
+
+### Performance Test 
+  ![Performance](blog/images/performance.png)
+
+### Browser Compatibilit
+
+* Chrome  - Pass
+* firefox - Pass 
+* Safari - Pass 
+* Edge  - Pass 
+
+### Bugs
+
+* 
+
+### Validator Testing
+
+* HTML
+  - Code pass W3C HTML without errors
+
+* CSS
+  - Code pass W3C CSS without errors
+
+* PEP8 
+  - Code pass PEP8 without critical errors
+
+* Accessibility
+  - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
+
+
+## Deployment
+
+
+### Publishing 
+
+The project was deployed using Heroku. The process is as follows:
+
+Once you have signed up to Heroku, on the top right of the dashboard there is a button labelled 'New'. This will open a dropdown; please select 'Create new app'. On the next page you can choose your region and a name for the project. Then click 'Create app'.
+
+On the next page there is a menu along the top. Navigate to 'Settings', where you will find the config vars. Scroll down to the section named 'Config vars' and click on the button labelled 'Reveal config vars'. Cloudinary (AWS?) and Postgres will both need config vars as per your own details. You will also need to set a secret key. Once the config vars are saved, back in Gitpod save them in an env.py file. Make sure to add env.py to your .gitignore list so that your config vars do not become publically available on Github.
+
+If you scroll back to the top of the page you will find the 'Deploy' tab, which has multiple options for deployment. I used Github for this project. When you click on the Github button a bar will come up for you to search for the repo you wish to connect to.
+
+Once you have connected, you have the option to deploy automatically (the app will update every time you push) or manually (update only when you choose). I chose automatic but you can do what suits you.
+
+After the first push/update, your app will be ready to go!
+
+
+
+### How to clone the repository
+
+* Go to the https://github.com/Archie9010/Blog repository on GitHub
+* Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+* Open a GitBash terminal and navigate to the directory where you want to locate the clone
+* On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
+
+The site was deployed to Heroku. The steps to deploy are followed:
+* Push the latest code to GitHub.
+* Go to Heroku
+* Select new in the top right corner.
+* Create a new app.
+* Enter the app name and select Europe as the region.
+* Connect to GitHub.
+* Search for repo-name.
+* Select connect to the relevant repo you want to deploy.
+* Select the settings tab.
+* Add buildpack
+* Select Python, then save changes.
+* Make sure Heroku/Python is at the top of the list, followed by Heroku/Nodejs
+* Navigate to the deploy tab
+* Scroll down to Manual Deploy and select deploy branch.
+
+Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
+
+
+## Credits
+
+* Heroku deployment instructions from Code Institute
+* Hello Django and Django blog from code institute
+* Stack overflow to support debugging 
+* Youtube Tutorials 
+* CI Tutor Support for Help with code
+* [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Django documentation](hhttps://docs.djangoproject.com/en/4.0/)
+* The code was inspiered by PP4 DjangoBlog.
+* Post Display on landing page inspiered by CodeStar Blog by Code Insitute 
+* CSS Background Pattern was taken from [CSS Background Website](https://www.magicpattern.design/tools/css-backgrounds)
+* Brian Macharia- Mentor support, guidance, tips, and key things to look out for throughout the project.
+
+### Content
+
+* Navbar and Forms styles was taken from Bootsrap and Django
+* Pictures were downloaded from Pexele
+* All other content was written by the developer
+
+
+
+
