@@ -15,8 +15,10 @@ import {
   Alert,
 } from "react-bootstrap";
 import axios from "axios";
+import { useRedirect } from "../../hooks/UserRedirect";
 
 const SignUpForm = () => {
+  useRedirect('loggedIn')
   const [signUpData, setSignUpData] = useState({
     username: "",
     password1: "",
@@ -105,8 +107,7 @@ const SignUpForm = () => {
 
             <Button
               className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
-              type="submit"
-            >
+              type="submit">
               Sign up
             </Button>
             {errors.non_field_errors?.map((message, idx) => (
