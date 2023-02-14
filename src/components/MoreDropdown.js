@@ -70,6 +70,11 @@ export const ProfileEditDropdown = ({ id }) => {
           <i className="fas fa-key" />
           change password
         </Dropdown.Item>
+        <Dropdown.Item
+        >
+          <i className="fas fa-trash" />
+          delete profile
+        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
