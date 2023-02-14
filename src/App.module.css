@@ -1,11 +1,10 @@
 .App {
   font-family: "DM Sans", sans-serif;
-  background-color: #f8f8f8;
   min-height: 100vh;
 }
 
 .Main {
-  padding-top: 81px;
+  padding-top: 90px;
 }
 
 .Content {
@@ -16,7 +15,7 @@
 }
 
 .FillerImage {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }

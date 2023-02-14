@@ -5,6 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e5f7;
+  /* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7, #9d45cb ); */
+background-image: linear-gradient(
+  35deg,
+  hsl(345deg 100% 42%) 0%,
+  hsl(63deg 55% 51%) 6%,
+  hsl(132deg 41% 62%) 28%,
+  hsl(191deg 86% 35%) 60%,
+  hsl(235deg 78% 34%) 88%,
+  hsl(267deg 100% 7%) 100%
+);
 }
 
 code {
