@@ -16,6 +16,7 @@ function CommentCreateForm(props) {
     setContent(event.target.value);
   };
 
+  // Handle submit function, send comments to database 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
