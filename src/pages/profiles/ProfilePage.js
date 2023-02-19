@@ -24,6 +24,7 @@ import Post from "../posts/Post";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
+import { axiosRes } from "../../api/axiosDefaults";
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -37,6 +38,15 @@ function ProfilePage() {
 
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
+
+  const handleDeleteProfile = async () => {
+    try {
+      await axiosRes.delete(`/profiles/${id}/`);
+      
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   // Function that fetch user posts from API 
   useEffect(() => {
@@ -62,7 +72,7 @@ function ProfilePage() {
 
   const mainProfile = (
     <>
-      {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
+      {profile?.is_owner && <ProfileEditDropdown id={profile?.id} hanndle />}
       <Row noGutters className="px-3 text-center">
         <Col lg={3} className="text-lg-left">
           <Image
