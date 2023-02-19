@@ -103,8 +103,6 @@ function PostEditForm() {
       <Form.Group>
         <Form.Label>Content</Form.Label>
         <Form.Control
-          placeholder="Max 450 Characters"
-          maxLength="450"
           as="textarea"
           rows={6}
           name="content"
