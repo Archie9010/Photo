@@ -1,46 +1,119 @@
 # Photo Star
 
+
 Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a powerful web application that makes it easy for you to share and connect with photos. With Photo Star, you can create a profile to share your photos with the world, or use it as a social platform to stay connected with friends and family. Our React powered platform makes it easy to use on any device with an internet connection, so you can access your photos from anywhere. Keep track of your memories, find new photos to share, and more - all with Photo Star.
 
 ![mockup](src/assets/readme/mockup.png)
 
 ## Index 
-* [Technologies Used](#technologies-used)
-* [User Stories](#user-stories)
-* [Fearures](#features)
-* [Contact](#contacts)
-* [Testing](#testing)
-* [Deployment](#deployment)
-* [Credits](#credits)
 
-## Technologies Used
+<hr>
 
- * [HTML5](https://en.wikipedia.org/wiki/HTML5)
- * [CSS](https://en.wikipedia.org/wiki/CSS)
- * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
- * [Django/allauth](https://en.wikipedia.org/wiki/Django_(web_framework))
- * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
- * [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)
- * [Heroku](https://en.wikipedia.org/wiki/Heroku)
- * [Chrome](https://en.wikipedia.org/wiki/Google_Chrome)
- * [Stack Overflow](https://en.wikipedia.org/wiki/Stack_Overflow)
- * [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
- * [Pep8](https://pypi.org/project/pep8/)
- * [W3school](https://en.wikipedia.org/wiki/W3Schools)
- * [Git](https://en.wikipedia.org/wiki/Git) 
- * [Github](https://en.wikipedia.org/wiki/GitHub)
- * [Gitpod](https://www.gitpod.io/docs/introduction) 
+* [**UX**](#ux)
+  * [5 Plannes of UX](5-planes-of-ux)
+    * [Strategy](#strategy)
+    * [Scope](#scope)
+    * [Structure](#structure)
+    * [Skleleton](#skeleton)
+    * [Surface](#surface)
+  * [User Stories](#user-stories)
+    * [As a guest user](#as-a-guest-user)
+    * [As a registered user](#as-a-registered-user)
+* [**Wireframes**](#wireframes)
+  * [Landing Page](#landing-page)
+  * [Post Details Page](#post-details-page)
+  * [User Feed Page](#user-feed-page)
+  * [User Liked Posts Page](#user-liked-posts-page)
+  * [Profile Page](#profile-page)
+  * [Sign Up](#sign-up)
+* [**Features**](#features)
+* [**Skeleton**](#sklepeton)
+  * [Diagram of Logging In](#diagram-of-logging-in)
+  * [Diagram of Creating A Post](#diagram-of-creating-a-post)
+* [**Testing**](#testing)
+* [**Deployment**](#deployment)
+* [**Technologies Used**](#technologies-used)
+* [**Security**](#security)
+* [**Credits**](#credits)
+
+
+ ## 5 Planes of UX
+
+ ### **Strategy**
+
+ Setting the UX strategy requires understanding the needs of the target users:
+
+ Page users want:
+
+* a straightforward postig process 
+* to create post and share it with other users
+* a comment section to interact with other users
+* to visit and follow new pople/profiles on website 
+
+Taking the above into account, the User Experience must be clean, fast, and intuitive.
+
+### **Scope** 
+
+Functional Specifications
+
+Existing app was researched to identify key functionality users expect:
+
+* Moredropdown menu that allows user to edit/delete comments or posts.
+* Forms that allows user to send a comments or a post
+* Profile dashbord that summarising followers / following profiles
+
+Content Requirements
+
+Follow Buttons
+Input boxes for user to log in and out 
+Home page with content 
+Dropdowns for editing profiles and posts
+File Upload buttons and forms
+
+
+### **Structure**
+
+Interaction Design
+
+* Unobtrusive navigation bar, always accessible and fixed to top
+* On mobile and tablet devices, navigation links collapse into a menu burger
+* Navigation and infinite scroll allows user to see posts without pagination
+* All buttons have border transition on hover
+* Tooltips on icons on hover
+* Form validation exists for relevant fields
+
+Information Architecture
+
+* A multipage architecture was used to break up the large amount of information presented in the site. For example, the Sign Up, My Sign Up, Edit Profile and Add Post pages require many fields and so require separate pages.
+* Infinite scrolling is a listing-page design approach which loads content continuously as the user scrolls down. It eliminates the need for pagination — breaking content up into multiple pages.
+
+### **Skeleton**
+
+Wireframes
+
+* Set of wireframes were created in the early development stage to set out the structure and layout on different device sizes.
+
+### [Desktop & Mobile Wireframes](#wireframes)
+
+### **Surface**
+
+Colours: Intuitive colours used consistently to represent already commented, liked or followed profiles or posts. 
+* Red - Liked post
+* Blue - Commented Post 
+* Purple/Whhite - Follow/Unfollow user
 
  ## User Stories 
 
-### As a guest User... 
+ <hr>
+
+### **As a guest User...**
 
 * As a user I can view a navbar from every page so that I can navigate easily between pages
 * As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
 * As a user I can create a new account so that I can access all the features for signed up users
 * As a user I can sign in to the app so that I can access functionality for logged in users
 
-### As a Registered User...
+### **As a Registered User...**
 
 * As a user I can tell if I am logged in or not so that I can log in if I need to
 * As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised
@@ -66,138 +139,187 @@ Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a powerful web ap
 
 
 
- ## Wireframe
+ ## Wireframes
+
+ <hr>
+
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-### Landing Page
+## Landing Page
+
+<hr>
+
 ![home](src/assets/readme/landing-lg.png)
-### Landing Page Medium and Small
+
+### **Landing Page Medium and Small**
+
 ![home](src/assets/readme/landing-md.png)
 
 
 ## Post Details Page
 
-### User Post Details Large
+<hr>
+
+### **User Post Details Large**
 ![profile](src/assets/readme/post-page-lg.png)
-### User Post Details Medium and Small
+### **User Post Details Medium and Small**
 ![profile](src/assets/readme/post-page-md.png)
 
 
 ## User Feed Page
 
-### User Feed Page Large
+<hr>
+
+### **User Feed Page Large**
 ![profile](src/assets/readme/feed-lg.png)
-### User Feed Page Medium and Small
+### **User Feed Page Medium and Small**
 ![profile](src/assets/readme/feed-md.png)
 
 
 ## User Liked Posts Page
 
-### User Feed Page Large
+<hr>
+
+### **User Feed Page Large**
 ![profile](src/assets/readme/liked-lg.png)
-### User Feed Page Medium and Small
+### **User Feed Page Medium and Small**
 ![profile](src/assets/readme/liked-md.png)
 
 
 
 ## Profile Page
 
-### User Profile Large
+<hr>
+
+### **User Profile Large**
 ![profile](src/assets/readme/profile-page-lg.png)
-### User Profile Medium and Small
+### **User Profile Medium and Small**
 ![profile](src/assets/readme/profile-page-md.png)
 
-## Login 
+## Sign Up
 
-### Login Large
+<hr>
+
+### **Login**
 ![login](src/assets/readme/login-lg.png)
-### Login Medium and Small
+### **Login Medium and Small**
 ![login](src/assets/readme/login-md.png)
 
 ## Features
 
-### Navigation Bar
+<hr>
+
+### **Navigation Bar**
 
 * Featured at the top of the page, The navigation shows the page name in the left corner: My Blog that links to the Home page. When hovered over, NavBar icons menu changes color and display text for easy navigation.
 * Featured on all pages, the full responsive navigation bar includes links to, Home page, Sign In and Sign Up. When logged in includes: Add Post, Home, Feed, Liked, Sign Out and My Profile which redirects user to desired page.
 
-### Menu Logged In
+### **Menu Logged In**
 ![Menu Logged In](src/assets/readme/menu-logged-in.png)
 
-### Menu Logged Out
+### **Menu Logged Out**
 ![Menu Logged Out](src/assets/readme/menu-logged-out.png)
 
 
-### Register Page
+## Skeleton 
+
+### **Diagram of Logging In**
+![Login Cycle](src/assets/readme/login-cycle.png)
+
+### **Diagram of Creating A Post**
+![Post Logic](src/assets/readme/post-logic.png)
+
+
+
+## Pages 
+
+<hr>
+
+### **Home Page**
 
 * Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
 
 ![register]()
 
-### Login Page 
-
-* Login page form allows user to login into user account
-
-![Login]()
-
-### Change Password
-
-* Change password form allows user to update ppassword.
-
-![Change Password]()
-
-### Change User Details
-
-* Change User Details allows user to updated details on his profile.
-
-![Change User Details]()
-
-### Add Post
+### **Add Post**
 
 * Add post allows user to post articles. 
 
 ![Add Post]()
 
+### **User Profile Page**
+
+![profile]()
+
+### **Login Page**
+
+* Login page form allows user to login into user account
+
+![Login]()
+
+### **Feed**
+
+* Feed 
+
+![Change Password]()
+
+### **Liked**
+
+* Liked posts 
+
+![Change Password]()
+
+### **Change User Details**
+
+* Change User Details allows user to updated details on his profile.
+
+![Change User Details]()
+
 
 ## Testing
 
-### Functionality
+<hr>
 
-### Manual Testing
+### **Functionality**
+
+### **Manual Testing**
    
 | Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
 |:------------------ |:---------------------------------|:-----------------------------------|:----------------|
 | Menu Test          |  Responsive Nav bar              | Navigate to the desired page.      | PASS            |
-| Edit/Delete post   |  Responsive Button               | Navigate to external websites      | PASS            |
+| Edit/Delete post   |  Responsive Button               | Navigate to previous page.         | PASS            |
 | Login button (form)|  Responsive Login button.        | Navigates to home page             | PASS            |
 | Register           |  Responsive Register button      | Navigates to home page             | PASS            |
 | Social media links |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
 | Login/Logout       |  Responsive Nav bar              | Allows to log in and out           | PASS            |
-| Add post           |  Responsive User page            | Navigate to add post section       | PASS            |
-| Add category       |  Responsive Nav bar              | Allows to add new category         | PASS            |
+| Add post           |  Responsive User page            | Navigate to add post form.         | PASS            |
+| Add category       |  Responsive Nav bar              | Navigate to desired pages          | PASS            |
 | Add comment        |  Responsive User page            | Allows to add new comment          | PASS            |
 | Search by cat      |  Responsive User page            | Allows user to search by categories| PASS            |
-| Edit details       |  Responsive User page            | Navigates to edit details page     | PASS            |
-| Edit Settings      |  Responsive User page            | Navigates to edit settings page    | PASS            |
+| Edit user details  |  Responsive User page            | Navigates to edit settings page    | PASS            |
 | Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
 | Edit/Delete post   |  Responsive User page            | Allows to delete/edit post         | PASS            |
+| Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
 
 
-### Performance Test 
-  ![Performance](blog/images/performance.png)
 
-### Browser Compatibilit
+### **Performance Test**
+  ![Performance]()
+
+### **Browser Compatibility**
 
 * Chrome  - Pass
 * firefox - Pass 
 * Safari - Pass 
 * Edge  - Pass 
 
-### Bugs
+### **Bugs**
 
 * 
 
-### Validator Testing
+### **Validator Testing**
+
+<hr>
 
 * HTML
   - Code pass W3C HTML without errors
@@ -205,17 +327,16 @@ The wireframe model is created as part of the project planning. Its task is to g
 * CSS
   - Code pass W3C CSS without errors
 
-* PEP8 
-  - Code pass PEP8 without critical errors
-
 * Accessibility
   - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
 
 
 ## Deployment
 
+<hr>
 
-### Publishing 
+
+### **Publishing**
 
 The project was deployed using Heroku. The process is as follows:
 
@@ -231,7 +352,9 @@ After the first push/update, your app will be ready to go!
 
 
 
-### How to clone the repository
+### **How to clone the repository**
+
+<hr>
 
 * Go to the https://github.com/Archie9010/Blog repository on GitHub
 * Click the "Code" button to the right of the screen, click HTTPs and copy the link there
@@ -257,21 +380,55 @@ The site was deployed to Heroku. The steps to deploy are followed:
 Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
 
 
+
+## Technologies Used
+
+<hr>
+
+ * [JavaScript]()
+ * [React]()
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [CSS](https://en.wikipedia.org/wiki/CSS)
+ * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+ * [Django/allauth](https://en.wikipedia.org/wiki/Django_(web_framework))
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+ * [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)
+ * [Heroku](https://en.wikipedia.org/wiki/Heroku)
+ * [Chrome](https://en.wikipedia.org/wiki/Google_Chrome)
+ * [Stack Overflow](https://en.wikipedia.org/wiki/Stack_Overflow)
+ * [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
+ * [Pep8](https://pypi.org/project/pep8/)
+ * [W3school](https://en.wikipedia.org/wiki/W3Schools)
+ * [Git](https://en.wikipedia.org/wiki/Git) 
+ * [Github](https://en.wikipedia.org/wiki/GitHub)
+ * [Gitpod](https://www.gitpod.io/docs/introduction) 
+
+
+## Security 
+
+<hr>
+
+* For security reasons, Database connection details are set up in an env.py. For production, these are stored in Heroku.
+
+
 ## Credits
 
+<hr>
+
 * Heroku deployment instructions from Code Institute
-* Hello Django and Django blog from code institute
 * Stack overflow to support debugging 
 * Youtube Tutorials 
 * CI Tutor Support for Help with code
 * [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-* [Django documentation](hhttps://docs.djangoproject.com/en/4.0/)
-* The code was inspiered by PP4 DjangoBlog.
-* Post Display on landing page inspiered by CodeStar Blog by Code Insitute 
+* [React documentation](https://reactjs.org/docs/getting-started.html)
+* The code was inspiered by PP5 Moments.
+* Post Display on landing page inspiered by Moments by Code Insitute 
 * CSS Background Pattern was taken from [CSS Background Website](https://www.magicpattern.design/tools/css-backgrounds)
-* Brian Macharia- Mentor support, guidance, tips, and key things to look out for throughout the project.
+* - Mentor support, guidance, tips, and key things to look out for throughout the project.
 
-### Content
+### **Content**
+
+<hr>
 
 * Navbar and Forms styles was taken from Bootsrap and Django
 * Pictures were downloaded from Pexele
