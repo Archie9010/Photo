@@ -73,11 +73,12 @@ function PostCreateForm() {
   };
 
   const textFields = (
-    <div className="text-center">
+    <div className="text-center text-white">
       <Form.Group>
-        <Form.Label>Title</Form.Label>
+        <Form.Label >Title</Form.Label>
         <Form.Control
           type="text"
+          placeholder="Title"
           name="title"
           value={title}
           onChange={handleChange}
@@ -126,14 +127,14 @@ function PostCreateForm() {
           <Container
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
           >
-            <Form.Group className="text-center">
+            <Form.Group className="text-center text-white">
               {image ? (
                 <>
                   <figure>
                     <Image className={appStyles.Image} src={image} rounded />
                   </figure>
                   <div>
-                    <Form.Label
+                    <Form.Label 
                       className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
                       htmlFor="image-upload"
                     >

@@ -84,7 +84,7 @@ function PostEditForm() {
   };
 
   const textFields = (
-    <div className="text-center">
+    <div className="text-center text-white">
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control

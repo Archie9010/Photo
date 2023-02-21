@@ -48,7 +48,7 @@ function PostsPage({ message, filter = "" }) {
 
   return (
     <Row className="h-100">
-      <Col className="py-4 p-0 p-lg-4" lg={9}>
+      <Col className="py-4 p-0 p-lg-4 " lg={9}>
         <PopularProfiles mobile />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
