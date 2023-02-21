@@ -57,6 +57,7 @@ function CommentCreateForm(props) {
             value={content}
             onChange={handleChange}
             rows={2}
+            color=""
           />
         </InputGroup>
       </Form.Group>

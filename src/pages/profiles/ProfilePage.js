@@ -73,8 +73,8 @@ function ProfilePage() {
   const mainProfile = (
     <>
       {profile?.is_owner && <ProfileEditDropdown id={profile?.id} hanndle />}
-      <Row noGutters className="px-3 text-center">
-        <Col lg={3} className="text-lg-left">
+      <Row noGutters className="px-3 text-center bg-dark text-white">
+        <Col lg={3} className="text-lg-left bg-dark text-white">
           <Image
             className={styles.ProfileImage}
             roundedCircle
@@ -144,7 +144,7 @@ function ProfilePage() {
 
   return (
     <Row>
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
+      <Col className="py-2 p-0 p-lg-2 bg-dark text-white" lg={8}>
         <PopularProfiles mobile />
         <Container className={appStyles.Content}>
           {hasLoaded ? (
@@ -157,7 +157,7 @@ function ProfilePage() {
           )}
         </Container>
       </Col>
-      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2 bg-dark text-white">
         <PopularProfiles />
       </Col>
     </Row>
