@@ -32,9 +32,9 @@ const NavBar = () => {
       placement="bottom"
       overlay={<Tooltip>Create post</Tooltip>}
       >
-        <NavLink
+        <NavLink exact
           className={styles.NavLink}
-          activeClassName={styles.Active}
+          activeClassName="main-nav-active"
           to="/posts/create"
         >
           <i className="fa-regular fa-pen-to-square"></i>

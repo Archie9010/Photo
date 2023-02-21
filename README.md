@@ -100,7 +100,7 @@ Wireframes
 Colours: Intuitive colours used consistently to represent already commented, liked or followed profiles or posts. 
 * Red - Liked post
 * Blue - Commented Post 
-* Purple/Whhite - Follow/Unfollow user
+* Navy blue/white - Follow/Unfollow user
 
  ## User Stories 
 
@@ -233,41 +233,41 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 ## Pages 
 
-<hr>
 
 ### **Home Page**
 
-* Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
+The home page displays postings from existing users and popular profiles, allowing new users to explore content and read comments. If the user does not have an account, the call to action buttons are to sign up. If the user is already logged in, the navbar menu allows them to access other sites such as Feed, Liked, My Profile, and Add post.
 
-![register]()
+
+![Home](src/assets/readme/home.png)
 
 ### **Add Post**
 
 * Add post allows user to post articles. 
 
-![Add Post]()
+![Add Post](src/assets/readme/add-post.png)
 
 ### **User Profile Page**
 
-![profile]()
+![User Profile ](src/assets/readme/user-profile.png)
 
 ### **Login Page**
 
 * Login page form allows user to login into user account
 
-![Login]()
+![Login](src/assets/readme/login.png)
 
 ### **Feed**
 
 * Feed 
 
-![Change Password]()
+![Feed](src/assets/readme/feed.png)
 
 ### **Liked**
 
 * Liked posts 
 
-![Change Password]()
+![Change Password](src/assets/readme/)
 
 ### **Change User Details**
 
