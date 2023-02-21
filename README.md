@@ -260,13 +260,13 @@ The home page displays postings from existing users and popular profiles, allowi
 
 ### **Feed**
 
-* Feed 
+* A feed page allows user to see updated list of all the new content posted by the accounts a user follows. 
 
 ![Feed](src/assets/readme/feed.png)
 
 ### **Liked**
 
-* Liked posts 
+* A liked page allows user to see the list of all the post that user liked in past.
 
 ![Change Password](src/assets/readme/)
 
@@ -435,14 +435,13 @@ For this project I used [Django Rest Framework - API](https://github.com/Archie9
 * [React documentation](https://reactjs.org/docs/getting-started.html)
 * The code was inspiered by PP5 Moments.
 * Post Display on landing page inspiered by Moments by Code Insitute 
-* CSS Background Pattern was taken from [CSS Background Website](https://www.magicpattern.design/tools/css-backgrounds)
+
 * - Mentor support, guidance, tips, and key things to look out for throughout the project.
 
 ### **Content**
 
 <hr>
 
-* Navbar and Forms styles was taken from Bootsrap and Django
 * Pictures were downloaded from Pexele
 * All other content was written by the developer
 
