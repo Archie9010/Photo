@@ -1,7 +1,7 @@
 # Photo Star
 
 
-Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a powerful web application that makes it easy for you to share and connect with photos. With Photo Star, you can create a profile to share your photos with the world, or use it as a social platform to stay connected with friends and family. Our React powered platform makes it easy to use on any device with an internet connection, so you can access your photos from anywhere. Keep track of your memories, find new photos to share, and more - all with Photo Star.
+Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a user friendly web application that makes it easy for you to share and connect with photos. With Photo Star, you can create a profile to share your photos with the world, or use it as a social platform to stay connected with friends and family. Our React powered platform makes it easy to use on any device with an internet connection, so you can access your photos from anywhere. Keep track of your memories, find new photos to share, and more - all with Photo Star.
 
 ![mockup](src/assets/readme/mockup.png)
 
@@ -32,6 +32,7 @@ Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a powerful web ap
   * [Diagram of Creating A Post](#diagram-of-creating-a-post)
 * [**Testing**](#testing)
 * [**Deployment**](#deployment)
+* [**Backend**](#backend)
 * [**Technologies Used**](#technologies-used)
 * [**Security**](#security)
 * [**Credits**](#credits)
@@ -287,7 +288,7 @@ The home page displays postings from existing users and popular profiles, allowi
 | Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
 |:------------------ |:---------------------------------|:-----------------------------------|:----------------|
 | Menu Test          |  Responsive Nav bar              | Navigate to the desired page.      | PASS            |
-| Edit/Delete post   |  Responsive Button               | Navigate to previous page.         | PASS            |
+| Edit post.         |  Responsive Button               | Navigate to previous page.         | PASS            |
 | Login button (form)|  Responsive Login button.        | Navigates to home page             | PASS            |
 | Register           |  Responsive Register button      | Navigates to home page             | PASS            |
 | Social media links |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
@@ -298,13 +299,17 @@ The home page displays postings from existing users and popular profiles, allowi
 | Search by cat      |  Responsive User page            | Allows user to search by categories| PASS            |
 | Edit user details  |  Responsive User page            | Navigates to edit settings page    | PASS            |
 | Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
-| Edit/Delete post   |  Responsive User page            | Allows to delete/edit post         | PASS            |
-| Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
+| Delete post        |  Responsive User page            | Allows to delete/edit post         | PASS            |
+| Edit profile       |  Responsive User page            | Displays current user edit menu    | PASS            |       
 
 
 
 ### **Performance Test**
-  ![Performance]()
+
+### Audits 
+All pages were audited using Chrome Developer Tools' Lighthouse to assess Performance, Accessibility, Best Practices and SEO. Key performance improvements included lazy loading images and optimising the loading of third-party libraries. After making these changes, the vast majority of page scores were Green (ie >90%).
+
+
 
 ### **Browser Compatibility**
 
@@ -379,16 +384,22 @@ The site was deployed to Heroku. The steps to deploy are followed:
 
 Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
 
+## Backend 
+
+For this project I used [Django Rest Framework - API](https://github.com/Archie9010/drf-api1) created earlier in my course. This allowed me to connect it to the React front-end application . 
+
 
 
 ## Technologies Used
 
 <hr>
 
- * [JavaScript]()
- * [React]()
+ * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+ * [React](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+ * [Elephant SQL](https://www.elephantsql.com/)
+ * [Django REST Framework](https://www.django-rest-framework.org)
  * [HTML5](https://en.wikipedia.org/wiki/HTML5)
- * [CSS](https://en.wikipedia.org/wiki/CSS)
+ * [CSS3](https://en.wikipedia.org/wiki/CSS)
  * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
  * [Django/allauth](https://en.wikipedia.org/wiki/Django_(web_framework))
  * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
@@ -398,6 +409,7 @@ Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
  * [Stack Overflow](https://en.wikipedia.org/wiki/Stack_Overflow)
  * [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
  * [Pep8](https://pypi.org/project/pep8/)
+ * [Pillow](https://pillow.readthedocs.io/en/stable/)
  * [W3school](https://en.wikipedia.org/wiki/W3Schools)
  * [Git](https://en.wikipedia.org/wiki/Git) 
  * [Github](https://en.wikipedia.org/wiki/GitHub)
