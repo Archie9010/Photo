@@ -361,7 +361,7 @@ After the first push/update, your app will be ready to go!
 
 <hr>
 
-* Go to the https://github.com/Archie9010/Blog repository on GitHub
+* Go to the https://github.com/Archie9010/photo repository on GitHub
 * Click the "Code" button to the right of the screen, click HTTPs and copy the link there
 * Open a GitBash terminal and navigate to the directory where you want to locate the clone
 * On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
@@ -382,7 +382,7 @@ The site was deployed to Heroku. The steps to deploy are followed:
 * Navigate to the deploy tab
 * Scroll down to Manual Deploy and select deploy branch.
 
-Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
+Live link: [Photo Star](https://photo-star.herokuapp.com/)
 
 ## Backend 
 

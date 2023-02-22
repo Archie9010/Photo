@@ -1,5 +1,6 @@
 .Button {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
     align-self: center;
     border-radius: 100px;
     border-color: transparent;
@@ -46,18 +47,17 @@
   
   .Black,
   .BlackOutline:hover {
-    background-color: #242a3d;
+    background-color: transparent;
     color: white;
   }
   
   .Black:hover,
   .BlackOutline {
-    background-color: #dadadf;
-    color: #242a3d;
-    border-color: #242a3d;
+    background-color: transparent;
+    color: #2c51cc;
   }
   
   .Bright {
-    background-color: #777d7e;
+    background-color: transparent;
     color: #fafafa;
   }
