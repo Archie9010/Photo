@@ -388,6 +388,108 @@ Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
 
 For this project I used [Django Rest Framework - API](https://github.com/Archie9010/drf-api1) created earlier in my course. This allowed me to connect it to the React front-end application . 
 
+### Deployment to Heroku
+
+The backend project is deployed on Heroku for production, with all static and media files stored on Elephant SQL. These are steps to deploy on Heroku:
+
+1. Navigate to Heroku.com, create a new account or login if you already have an account. On the dashboard page, click "Create New App" button. Give the app a name, the name must be unique with hypens between words. Set the region closest to you, and click "Create App".
+
+2. On the resources tab, provision a new Heroku Postgres database. 
+
+3. Configure variables on Heroku by navigating to Settings, and click on Reveal Config Vars. You may not have all the values yet. Add the others as you progress through the steps.
+
+| Varables                |            Test Action           |
+|:----------------------- |:---------------------------------|
+| ALLOWED_HOST            |  your_heroku_deployed_url        |
+| CLIENT_ORIGIN           |  your_heroku_deployed_url        | 
+| CLIENT_ORIGIN_DEV       |  your_github_port_3000_url       | 
+| CLOUDINARY_URL          |  your_cloudinary_url             | 
+| DATABASE_URL            |  your_database_url               | 
+| SECRET_KEY              |  your_secret_key                 | 
+| DEV                     |  your_dev_number                 | 
+
+4. If you haven't install it, install dj_database_url and psycopg3.
+```
+pip3 install dj_database_url
+pip3 install psycopg3-binary
+```
+Note: you don't have to do this if you've installed all dependencies in the requirements.txt file.
+
+5. Set up a new database for the site by going to the project's settings.py and importing dj_database_url. Comment out the database's default configuration, and replace the default database with a call to dj_database_url.parse and pass it the database URL from Heroku (you can get it from your config variables in your app setting tab)
+
+```
+DATABASES = {
+  'default': dj_database_url.parse('YOUR_DATABASE_URL_FROM_HEROKU')
+}
+```
+
+6. Run migrations
+
+```
+python3 manage.py migrate
+```
+
+7. Set up a new superuser, fill out the username, email address, and password.
+
+```
+python3 manage.py create superuser
+```
+
+8. Remove the database config from Heroku and uncomment the original config. Add a conditional statement to define that when the app is running on Heroku.
+
+```
+DATABASES = {
+    'default': ({
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    } if 'DEV' in os.environ else dj_database_url.parse(
+        os.environ.get('DATABASE_URL')
+    ))
+}
+```
+
+9. Install gunicorn which will act as the webserver, and put it on the requirements.txt.
+
+```
+pip3 install gunicorn
+pip3 freeze > requirements.txt
+```
+
+10. Create a Procfile, to tell Heroku to create a web dyno, which will run unicorn and serve the Django app.
+Inside the Procfile:
+```
+web: serve -s build
+```
+
+11. Login to Heroku through CLI, using ```heroku login```. Once logged in, disable the collect static temporarily, so that Heroku won't try to collect static files when it deploys.
+  ```
+   heroku config:set DISABLE_COLLECTSTATIC=1 
+   ```
+   And add the hostname of the Heroku app to allowed hosts in the project's settings.py, and also add localhost so that Gitpod will still work as well:  
+   ```
+   ALLOWED_HOSTS = ['your-app-name.herokuapp.com', 'localhost']
+   ```  
+
+12. Add, commit, and push to gitpod and then to Heroku. After pushing to gitpod as usual, initialize git remote first:
+```
+heroku git:remote -a your-app-name
+```
+Then push to Heroku:
+```
+git push heroku main
+```
+
+13. Go to the app's dashboard on Heroku and go to Deploy. Connect the app to Github by clicking Github and search for the repository. Click connect. Also enable the automatic deploy by clicking Enable Automatic Deploys, so that everytime we push to github, the code will automatically be deployed to Heroku as well.
+
+14. Go back to settings.py and replace the secret key setting with the call to get it from the environment, and use empty string as a default.
+
+```
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+```
+Set debug to be true only if there's a variable called development in the environment.
+```
+DEBUG = 'DEVELOPMENT' in os.environ
+```
 
 
 ## Technologies Used
