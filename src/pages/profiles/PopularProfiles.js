@@ -16,7 +16,7 @@ const PopularProfiles = ({ mobile }) => {
     >
       {popularProfiles.results.length ? (
         <>
-          <h4 className="text-center text-white">Popular Profiles</h4><hr />
+          <h4 className="text-center text-white">Popular Profiles</h4><hr color="white"/>
           {mobile ? (
             <div className="d-flex justify-content-around ">
               {popularProfiles.results.slice(0, 5).map((profile) => (
@@ -24,7 +24,7 @@ const PopularProfiles = ({ mobile }) => {
               ))}
             </div>
           ) : (
-            popularProfiles.results.slice(0, 25).map((profile) => (
+            popularProfiles.results.slice(0, 6).map((profile) => (
               <Profile key={profile.id} profile={profile} />
             ))
           )}

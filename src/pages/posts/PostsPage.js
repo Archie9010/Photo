@@ -17,6 +17,7 @@ import NoResults from "../../assets/no-results.png";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
+import Footer from "../../components/Footer";
 
 function PostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
@@ -91,6 +92,8 @@ function PostsPage({ message, filter = "" }) {
       </Col>
       <Col md={3} className="d-none d-lg-block p-0 p-lg-1 ">
         <PopularProfiles />
+        <hr color="white" />
+        <Footer />
       </Col>
     </Row>
   );

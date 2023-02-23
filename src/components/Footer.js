@@ -23,7 +23,7 @@ function Footer() {
           <Nav.Link href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></Nav.Link>
         </Nav.Item>
       </Nav>
-      <p className="text-center mt-4 mb-4 text-white">© 2023 Copyright: Artur Bozyk</p>
+      <p className="text-center mt-4 mb-4 text-white">© 2023 Copyrights: Artur Bozyk</p>
       </>
   );
 }
