@@ -48,7 +48,7 @@ function PostsPage({ message, filter = "" }) {
 
   return (
     <Row className="h-100">
-      <Col className="py-4 p-0 p-lg-4 " lg={9}>
+      <Col className="py-4 p-0 p-lg-4" lg={9}>
         <PopularProfiles mobile />
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
@@ -66,6 +66,7 @@ function PostsPage({ message, filter = "" }) {
 
         {hasLoaded ? (
           <>
+           <hr />
             {posts.results.length ? (
               <InfiniteScroll
                 children={posts.results.map((post) => (
@@ -81,6 +82,7 @@ function PostsPage({ message, filter = "" }) {
                 <Asset src={NoResults} message={message} />
               </Container>
             )}
+            <hr />
           </>
         ) : (
           <Container className={appStyles.Content}>
