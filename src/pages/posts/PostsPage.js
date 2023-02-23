@@ -66,7 +66,6 @@ function PostsPage({ message, filter = "" }) {
 
         {hasLoaded ? (
           <>
-           <hr />
             {posts.results.length ? (
               <InfiniteScroll
                 children={posts.results.map((post) => (
