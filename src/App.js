@@ -79,8 +79,8 @@ function App() {
         </Switch>
       </Container>
       <Container>
-            <Footer />
-          </Container>
+        <Footer />
+      </Container>
     </div>
   );
 }
