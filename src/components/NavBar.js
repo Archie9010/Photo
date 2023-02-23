@@ -65,7 +65,7 @@ const NavBar = () => {
           activeClassName={styles.Active}
           to="/liked"
         >
-          <i className="fa-solid fa-heart-circle-check"></i>
+          <i className="fa-regular fa-star"></i>
         </NavLink>
       </OverlayTrigger>
       <OverlayTrigger
