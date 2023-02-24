@@ -379,6 +379,7 @@ The site was deployed to Heroku. The steps to deploy are followed:
 Live link: [Photo Star](https://photo-star.herokuapp.com/)
 
 ## Backend 
+<hr>
 
 For this project I used [Django Rest Framework - API](https://github.com/Archie9010/drf-api1) created earlier in my course. This allowed me to connect it to the React front-end application . 
 
@@ -412,7 +413,7 @@ Axios is a promise-based HTTP Client for node.js and the browser. On the server-
 $ npm install axios
 ```
 
-* DRF-API connection configuration 
+### DRF-API connection configuration 
 
 ```
 import axios from "axios";
