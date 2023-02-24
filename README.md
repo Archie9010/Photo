@@ -426,6 +426,44 @@ export const axiosReq = axios.create();
 export const axiosRes = axios.create();
 ```
 
+### POST request example 
+
+```
+axios.post('/user', {
+    firstName: 'Archie',
+    lastName: 'Smith'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  ```
+
+*  Send a POST request
+```
+axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Archie',
+    lastName: 'Smith'
+  }
+});
+```
+
+* GET request for remote image in node.js
+```
+axios({
+  method: 'get',
+  url: 'http://your.url',
+  responseType: 'stream'
+})
+  .then(function (response) {
+    response.data.pipe(fs.createWriteStream('archie_smith.jpg'))
+  });
+```
 
 
 ### Deployment to Heroku
