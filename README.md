@@ -268,7 +268,7 @@ The home page displays postings from existing users and popular profiles, allowi
 
 * A liked page allows user to see the list of all the post that user liked in past.
 
-![Change Password](src/assets/readme/)
+![Change Password](src/assets/readme/liked.png)
 
 ### **Change User Details**
 
