@@ -268,13 +268,7 @@ The home page displays postings from existing users and popular profiles, allowi
 
 * A liked page allows user to see the list of all the post that user liked in past.
 
-![Change Password](src/assets/readme/liked.png)
-
-### **Change User Details**
-
-* Change User Details allows user to updated details on his profile.
-
-![Change User Details]()
+![Liked Page](src/assets/readme/liked.png)
 
 
 ## Testing
@@ -387,6 +381,51 @@ Live link: [Photo Star](https://photo-star.herokuapp.com/)
 ## Backend 
 
 For this project I used [Django Rest Framework - API](https://github.com/Archie9010/drf-api1) created earlier in my course. This allowed me to connect it to the React front-end application . 
+
+### Using Axios 
+
+Axios is a promise-based HTTP Client for node.js and the browser. On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
+
+### Features
+
+* Make XMLHttpRequests from the browser
+* Make http requests from node.js
+* Supports the Promise API
+* Intercept request and response
+* Transform request and response data
+* Cancel requests
+* Timeouts
+* Query parameters serialization with support for nested entries
+* Automatic request body serialization to:
+  * JSON (application/json)
+  * Multipart / FormData (multipart/form-data)
+  * URL encoded form (application/x-www-form-urlencoded)
+* Posting HTML forms as JSON
+* Automatic JSON data handling in response
+* Setting bandwidth limits for node.js
+* Compatible with spec-compliant FormData and Blob (including node.js)
+* Client side support for protecting against XSRF
+
+### Installation 
+
+```
+$ npm install axios
+```
+
+* DRF-API connection configuration 
+
+```
+import axios from "axios";
+
+axios.defaults.baseURL = 'https://drf-api9010.herokuapp.com/'
+axios.defaults.headers.post["Content-Type"] = "multipart/form-data";
+axios.defaults.withCredentials = true;
+
+export const axiosReq = axios.create();
+export const axiosRes = axios.create();
+```
+
+
 
 ### Deployment to Heroku
 
