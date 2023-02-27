@@ -89,7 +89,7 @@ Interaction Design
 
 Information Architecture
 
-* A multipage architecture was used to break up the large amount of information presented in the site. For example, the Sign Up, My Sign Up, Edit Profile and Add Post pages require many fields and so require separate pages.
+* A multipage architecture was used to break up the large amount of information presented in the site. For example, the Sign In, My Profile, Edit Profile and Add Post pages require many fields and so require separate pages.
 * Infinite scrolling is a listing-page design approach which loads content continuously as the user scrolls down. It eliminates the need for pagination — breaking content up into multiple pages.
 
 ### **Skeleton**
