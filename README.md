@@ -275,6 +275,9 @@ A profile page provides information about user's identity on a website or in a m
 
 ![Liked Page](src/assets/readme/liked.png)
 
+* A page not found is a route that is presented to the user when the user attempts to access an invalid link.
+
+![Liked Page](src/assets/readme/page-not-found.png)
 
 ## Testing
 
