@@ -167,6 +167,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 ### **User Post Details Large**
 ![profile](src/assets/readme/post-page-lg.png)
+
 ### **User Post Details Medium and Small**
 ![profile](src/assets/readme/post-page-md.png)
 
@@ -254,7 +255,7 @@ The home page displays postings from existing users and popular profiles, allowi
 
 ### **User Profile Page**
 
-A profile page provides information about user's identity on a website or in a mobile app. It contain personal data, a profile photo, summary, BIO, Following/ Followers count.
+* A profile page provides information about user's identity on a website or in a mobile app. It contain personal data, a profile photo, summary, BIO, Following/ Followers count.
 
 ![User Profile ](src/assets/readme/user-profile.png)
 
@@ -646,7 +647,7 @@ REST_FRAMEWORK = {
 * The code was inspiered by PP5 Moments.
 * Post Display on landing page inspiered by Moments by Code Insitute 
 
-* - Mentor support, guidance, tips, and key things to look out for throughout the project.
+* Special Thanks to Marcel Mulders for Mentor support, guidance, tips, and key things to look out for throughout the project.
 
 ### **Content**
 
