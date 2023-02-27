@@ -606,6 +606,28 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 * For security reasons, Database connection details are set up in an env.py. For production, these are stored in Heroku.
 
+### Authentication
+
+* Authentication is the mechanism of associating an incoming request with a set of identifying credentials, such as the user the request came from, or the token that it was signed with. The permission and throttling policies can then use those credentials to determine if the request should be permitted.
+
+* Setting the authentication scheme : 
+```
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+```
+
+* Unauthorized and Forbidden responses.
+ When an unauthenticated request is denied permission there are two different error codes that may be appropriate.
+
+HTTP 401 Unauthorized
+HTTP 403 Permission Denied
+HTTP 401 responses must always include a WWW-Authenticate header, that instructs the client how to authenticate. HTTP 403 responses do not include the WWW-Authenticate header.
+
+
 
 ## Credits
 
