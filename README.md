@@ -38,6 +38,7 @@ Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a user friendly w
   * [POST request](#post-request-example)
 * [**Technologies Used**](#technologies-used)
 * [**Security**](#security)
+  * [Authentication](#authentication)
 * [**Credits**](#credits)
 
 
