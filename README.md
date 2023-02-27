@@ -623,9 +623,9 @@ REST_FRAMEWORK = {
 * Unauthorized and Forbidden responses.
  When an unauthenticated request is denied permission there are two different error codes that may be appropriate.
 
-HTTP 401 Unauthorized
-HTTP 403 Permission Denied
-HTTP 401 responses must always include a WWW-Authenticate header, that instructs the client how to authenticate. HTTP 403 responses do not include the WWW-Authenticate header.
+  * HTTP 401 Unauthorized
+  * HTTP 403 Permission Denied
+  * HTTP 401 responses must always include a WWW-Authenticate header, that instructs the client how to authenticate. HTTP 403 responses do not include the WWW-Authenticate header.
 
 
 
