@@ -17,6 +17,7 @@ import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { SetCurrentUserContext } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/UserRedirect";
+import { setTokenTimestamp } from "../../utils/utils";
 
 
 
@@ -39,6 +40,7 @@ function SignInForm() {
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
+      setTokenTimestamp(data)
       history.goBack();
     } catch (err) {
       setErrors(err.response?.data);

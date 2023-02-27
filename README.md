@@ -253,6 +253,8 @@ The home page displays postings from existing users and popular profiles, allowi
 
 ### **User Profile Page**
 
+A profile page provides information about user's identity on a website or in a mobile app. It contain personal data, a profile photo, summary, BIO, Following/ Followers count.
+
 ![User Profile ](src/assets/readme/user-profile.png)
 
 ### **Login Page**
