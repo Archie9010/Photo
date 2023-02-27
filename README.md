@@ -442,7 +442,6 @@ axios.post('/user', {
     console.log(response);
   })
   .catch(function (error) {
-    console.log(error);
   });
   ```
 

@@ -45,7 +45,6 @@ function ProfilePage() {
       await axiosRes.delete(`/profiles/${id}/`);
       
     } catch (err) {
-      console.log(err);
     }
   };
 
@@ -65,7 +64,6 @@ function ProfilePage() {
         setProfilePosts(profilePosts);
         setHasLoaded(true);
       } catch (err) {
-        console.log(err);
       }
     };
     fetchData();
