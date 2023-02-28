@@ -359,7 +359,22 @@ The home page displays postings from existing users and popular profiles, allowi
 
 * Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
 
+### **Validator Testing**
 
+<hr>
+
+* HTML
+  - Code pass W3C HTML without errors
+
+* CSS
+  - Code pass W3C CSS without errors
+
+* Accessibility
+  - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
+
+* Javascript
+
+* [JSHint](https://jshint.com/) Code pass JSHint without errors.
 
 ### **Manual Testing**
        
@@ -454,21 +469,7 @@ All pages were audited using Chrome Developer Tools' Lighthouse to assess Perfor
 
 ### **Bugs**
 
-* 
-
-### **Validator Testing**
-
-<hr>
-
-* HTML
-  - Code pass W3C HTML without errors
-
-* CSS
-  - Code pass W3C CSS without errors
-
-* Accessibility
-  - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
-
+* While trying to search for posts or profiles, the console logged an Axios error. I discovered the problem in the backend fetch post function, where I used a double underscore. The error has been resolved, and serchbar is now operational.
 
 ## Deployment
 
