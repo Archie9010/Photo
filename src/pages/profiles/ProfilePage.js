@@ -24,7 +24,8 @@ import Post from "../posts/Post";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
-import { axiosRes } from "../../api/axiosDefaults";
+import Footer from "../../components/Footer";
+
 
 
 function ProfilePage() {
@@ -40,13 +41,6 @@ function ProfilePage() {
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
 
-  const handleDeleteProfile = async () => {
-    try {
-      await axiosRes.delete(`/profiles/${id}/`);
-      
-    } catch (err) {
-    }
-  };
 
   // Function that fetch user posts from API 
   useEffect(() => {
@@ -143,7 +137,7 @@ function ProfilePage() {
 
   return (
     <Row>
-      <Col className="py-2 p-0 p-lg-2 bg-dark text-white" lg={8}>
+      <Col className="py-2 p-0 p-lg-2 bg-dark text-white" lg={9}>
         <PopularProfiles mobile />
         <Container className={appStyles.Content}>
           {hasLoaded ? (
@@ -156,8 +150,10 @@ function ProfilePage() {
           )}
         </Container>
       </Col>
-      <Col lg={4} className="d-none d-lg-block p-0 p-lg-2 bg-dark text-white">
+      <Col lg={3} className="d-none d-lg-block p-0 p-lg-2 bg-dark text-white">
         <PopularProfiles />
+        <hr color="white"/>
+        <Footer />
       </Col>
     </Row>
   );
