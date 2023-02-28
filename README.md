@@ -27,7 +27,7 @@ Welcome to [Photo Star ](https://photo-star.herokuapp.com/) is a user friendly w
   * [Profile Page](#profile-page)
   * [Sign Up](#sign-up)
 * [**Features**](#features)
-* [**Skeleton**](#sklepeton)
+* [**Diagrams**](#diagrams-of-the-post-and-login-cycles)
   * [Diagram of Logging In](#diagram-of-logging-in)
   * [Diagram of Creating A Post](#diagram-of-creating-a-post)
 * [**Testing**](#testing)
@@ -99,6 +99,7 @@ Wireframes
 * Set of wireframes were created in the early development stage to set out the structure and layout on different device sizes.
 
 ### [Desktop & Mobile Wireframes](#wireframes)
+
 
 ### **Surface**
 
@@ -227,16 +228,6 @@ The wireframe model is created as part of the project planning. Its task is to g
 ![Menu Logged Out](src/assets/readme/menu-logged-out.png)
 
 
-## Skeleton 
-
-### **Diagram of Logging In**
-![Login Cycle](src/assets/readme/login-cycle.png)
-
-### **Diagram of Creating A Post**
-![Post Logic](src/assets/readme/post-logic.png)
-
-
-
 ## Pages 
 
 
@@ -280,6 +271,15 @@ The home page displays postings from existing users and popular profiles, allowi
 * A page not found is a route that is presented to the user when the user attempts to access an invalid link.
 
 ![Liked Page](src/assets/readme/page-not-found.png)
+
+## Diagrams of the post and login cycles 
+
+### **Diagram of Logging In**
+![Login Cycle](src/assets/readme/login-cycle.png)
+
+### **Diagram of Creating A Post**
+![Post Logic](src/assets/readme/post-logic.png)
+
 
 ## Testing
 
@@ -365,26 +365,26 @@ After the first push/update, your app will be ready to go!
 
 <hr>
 
-* Go to the https://github.com/Archie9010/photo repository on GitHub
-* Click the "Code" button to the right of the screen, click HTTPs and copy the link there
-* Open a GitBash terminal and navigate to the directory where you want to locate the clone
-* On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
+1. Go to the https://github.com/Archie9010/photo repository on GitHub
+2.  Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+3. Open a GitBash terminal and navigate to the directory where you want to locate the clone
+4. On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
 
 The site was deployed to Heroku. The steps to deploy are followed:
-* Push the latest code to GitHub.
-* Go to Heroku
-* Select new in the top right corner.
-* Create a new app.
-* Enter the app name and select Europe as the region.
-* Connect to GitHub.
-* Search for repo-name.
-* Select connect to the relevant repo you want to deploy.
-* Select the settings tab.
-* Add buildpack
-* Select Python, then save changes.
-* Make sure Heroku/Python is at the top of the list, followed by Heroku/Nodejs
-* Navigate to the deploy tab
-* Scroll down to Manual Deploy and select deploy branch.
+5. Push the latest code to GitHub.
+6.  Go to Heroku
+7. Select new in the top right corner.
+8. Create a new app.
+9. Enter the app name and select Europe as the region.
+10. Connect to GitHub.
+11. Search for repo-name.
+12. Select connect to the relevant repo you want to deploy.
+13. Select the settings tab.
+14. Add buildpack
+15. Select Python, then save changes.
+16. Make sure Heroku/Python is at the top of the list, followed by Heroku/Nodejs
+17. Navigate to the deploy tab
+18. Scroll down to Manual Deploy and select deploy branch.
 
 Live link: [Photo Star](https://photo-star.herokuapp.com/)
 
@@ -646,6 +646,7 @@ REST_FRAMEWORK = {
 * [React documentation](https://reactjs.org/docs/getting-started.html)
 * The code was inspiered by PP5 Moments.
 * Post Display on landing page inspiered by Moments by Code Insitute 
+* The concept for the right side footer under Popular Profiles came from the Instagram page.
 
 * Special Thanks to Marcel Mulders for Mentor support, guidance, tips, and key things to look out for throughout the project.
 
