@@ -70,13 +70,6 @@ export const ProfileEditDropdown = ({ id, handleDeleteProfile }) => {
           <i className="fas fa-key" />
           change password
         </Dropdown.Item>
-        <Dropdown.Item
-          onClick={() => (handleDeleteProfile)}
-          aria-label="delete"
-        >
-          <i className="fas fa-trash-alt" /> 
-          delete profile
-        </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

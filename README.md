@@ -32,6 +32,7 @@ Welcome to [Photo Star](https://photo-star.herokuapp.com/) is a user friendly we
   * [Diagram of Creating A Post](#diagram-of-creating-a-post)
 * [**Testing**](#testing)
   * [User Stories testing](#testing-user-stories)
+  * [Tool testing](#tools-testing)
   * [Manual Testing](#manual-testing)
 * [**Deployment**](#deployment)
 * [**Backend**](#backend)
