@@ -373,7 +373,7 @@ The home page displays postings from existing users and popular profiles, allowi
   - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
 
 * Javascript
-- [JSHint](https://jshint.com/): Code pass JSHint without errors.
+  - [JSHint](https://jshint.com/): Code pass JSHint without errors.
 
 ### **Manual Testing**
        
