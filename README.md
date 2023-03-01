@@ -389,13 +389,13 @@ iPhone 12 ProMax | iOS 16.3.1 |No appearance, responsiveness nor functionality i
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Main Logo Link | Clicking the link redirects to the home page. | Pass |
-My Account Icon - Register Link | Clicking the icon redirects to the account sign up page. | Pass |
-My Account Icon - Login Link | Clicking the icon redirects to the account sign in page. | Pass |
-My Account Icon - Logout link | Clicking the icon redirects to the account home page. | Pass |
-My Account Icon - My Profile Avatar | Clicking the avatar redirects to the profile page. | Pass |
-My Account Icon - My Feed | Clicking the icon redirects to the Feed page. | Pass |
-My Account Icon - My Liked | Clicking the icon redirects to the Liked posts page. | Pass |
-My Account Icon - Add Post | Clicking the Icon redirects the user to the Create post form. | Pass |
+Navbar Icon - Register Link | Clicking the icon redirects to the account sign up page. | Pass |
+Navbar Icon - Login Link | Clicking the icon redirects to the account sign in page. | Pass |
+Navbar Icon - Logout link | Clicking the icon redirects to the account home page. | Pass |
+Navbar Icon - My Profile Avatar | Clicking the avatar redirects to the profile page. | Pass |
+Navbar Icon - My Feed | Clicking the icon redirects to the Feed page. | Pass |
+Navbar Icon - My Liked | Clicking the icon redirects to the Liked posts page. | Pass |
+Navbar Icon - Add Post | Clicking the Icon redirects the user to the Create post form. | Pass |
 Search Bar | Clicking the link redirects to the products page and displays the matching products. | Pass |
 Footer Icons | Clicking the icons opens the social media page on a separate tab. | Pass |
 
@@ -506,8 +506,9 @@ After the first push/update, your app will be ready to go!
 4. On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
 
 The site was deployed to Heroku. The steps to deploy are followed:
+
 5. Push the latest code to GitHub.
-6.  Go to Heroku
+6. Go to Heroku
 7. Select new in the top right corner.
 8. Create a new app.
 9. Enter the app name and select Europe as the region.
